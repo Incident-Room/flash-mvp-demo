@@ -1,6 +1,6 @@
 {
-  "name": "Incident Room Flash MVP Environment",
-  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "name": "Incident Room Python Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1": {}
   },
@@ -13,6 +13,5 @@
       ]
     }
   },
-  "forwardPorts": [8080, 16686, 4317, 4318],
-  "postCreateCommand": "docker compose -f docker-compose.lean.yaml up -d"
+  "forwardPorts": [8080, 16686, 4317, 4318]
 }
