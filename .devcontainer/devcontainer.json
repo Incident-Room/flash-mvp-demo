@@ -1,0 +1,18 @@
+{
+  "name": "Incident Room Flash MVP Environment",
+  "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "alexkrechik.cucumberautocomplete"
+      ]
+    }
+  },
+  "forwardPorts": [8080, 16686, 4317, 4318],
+  "postCreateCommand": "docker compose -f docker-compose.lean.yaml up -d"
+}
