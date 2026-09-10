@@ -2,7 +2,7 @@
 
 > **Core Objective:** Rapid anomaly isolation, automatic Markdown "Anomaly Passport" generation, and zero-day BDD regression test synthesizing from OpenTelemetry microservice traces.
 
----
+
 
 ## 🏗 System Architecture (Lean Setup)
 
@@ -22,7 +22,7 @@ v
 | PASSPORT_INC-01.md         |
 | tests/reproduce_issue.feature|
 +----------------------------+
----
+
 
 ## 🚀 60-Second Demo Execution Flow
 
