@@ -6,7 +6,22 @@
 
 ## 🏗 System Architecture (Lean Setup)
 
-[cURL / Client] --(gRPC)--> [checkoutservice :50050]|(Unhandled Payload)v[paymentservice :50051] --> (CRASH / 500)|(OTel)v[OTel Collector :4317] --> [Jaeger API :16686]|(passport_generator.py)v+----------------------------+| PASSPORT_INC-01.md         || tests/reproduce_issue.feature|+----------------------------+
+[cURL / Client] --(gRPC)--> [checkoutservice :50050]
+|
+(Unhandled Payload)
+v
+[paymentservice :50051] --> (CRASH / 500)
+|
+(OTel)
+v
+[OTel Collector :4317] --> [Jaeger API :16686]
+|
+(passport_generator.py)
+v
++----------------------------+
+| PASSPORT_INC-01.md         |
+| tests/reproduce_issue.feature|
++----------------------------+
 ---
 
 ## 🚀 60-Second Demo Execution Flow
